@@ -1,13 +1,11 @@
-#!usr/bin/env python3
-"""
-Regexing
-"""
+#!usr/bin/env python3'
 import os
 import re
 import logging
 import mysql.connector
 from typing import List
-
+"""Regexing
+"""
 
 patterns = {
     'extract': lambda x, y: r'(?P<field>{})=[^{}]*'.format('|'.join(x), y),
